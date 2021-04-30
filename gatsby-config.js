@@ -5,14 +5,14 @@ module.exports = {
         author: `@EricMarcantonio`,
     },
     plugins: [
-        // {
-        //     resolve: 'gatsby-plugin-postcss',
-        //     options: {
-        //         postCssPlugins: [
-        //             require('tailwindcss')('./tailwind.config.js'),
-        //         ],
-        //     },
-        // },
+        {
+            resolve: 'gatsby-plugin-postcss',
+            options: {
+                postCssPlugins: [
+                    require('tailwindcss')('./tailwind.config.js'),
+                ],
+            },
+        },
         {
             resolve: `gatsby-plugin-purgecss`,
             options: { tailwind: true },
